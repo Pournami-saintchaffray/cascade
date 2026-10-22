@@ -1,0 +1,5 @@
+# The repo holds the site in 5 upload folders; this assembles them before building.
+[build]
+  base = "1-code"
+  command = "mkdir -p public/images && cp -r ../2-videos public/videos && cp -r ../3-images/. public/images/ && cp -r ../4-products public/images/products && cp -r ../5-galleries public/images/web && npm run build"
+  publish = ".next"
